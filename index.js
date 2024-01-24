@@ -196,7 +196,9 @@ truck.specific(13000);
 // Додаємо метод drive для прототипу Car, який збільшує kilometers на передане число, та виводить Подорожуємо <kilometers> кілометрів у <brand> <model>.
 Car.prototype.drive = function (kilometers) {
   this.kilometers += kilometers;
-  return `Подорожуємо ${kilometers} кілометрів у ${this.brand} ${this.model}.`;
+  console.log(
+    `Подорожуємо ${kilometers} кілометрів у ${this.brand} ${this.model}.`
+  );
 };
 
 // Використовуємо bind для зв'язування методу drive з конкретним об'єктом car.
